@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Заказ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <link rel="icon" href="Rectangle.png">
+</head>
+<body>
+  <h2>Оформление заказа</h2>
+  
+  <div class="container">
+    <form action="#" method="post">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Имя</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Ваше имя">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Фамилия</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="phone">Телефон</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="phone" name="phone" placeholder="Ваш номер телефона">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="address">Адрес</label>
+        </div>
+        <div class="col-75">
+          <textarea id="address" name="address" placeholder="Ваш адрес"></textarea>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+            <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+                <input type="email" id="email" name="email" placeholder="Ваш email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="message">Cостав заказа и его дизайн</label>
+            </div>
+            <div class="col-75">
+                <textarea id="message" name="message" placeholder="Введите пожелания к заказу"></textarea>
+            </div>
+        </div>
+        
+        <div class="row">
+            <button type="submit" onclick="submitForm()">Отправить заказ</button>
+        </div>
+        </form>
+            
+  </div>
+
+  <script>
+        function submitForm() {
+  // Получаем форму и поля ввода
+        const form = document.querySelector('form');
+        const fnameInput = document.getElementById('fname');
+        const lnameInput = document.getElementById('lname');
+        const phoneInput = document.getElementById('phone');
+        const addressInput = document.getElementById('address');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+
+                // Получаем значения полей ввода и выводим их в консоль
+        const formData = {
+            fname: fnameInput.value,
+            lname: lnameInput.value,
+            phone: phoneInput.value,
+            address: addressInput.value,
+            email: emailInput.value,
+            message: messageInput.value
+        };
+        console.log(formData);
+        form.reset();
+        alert('Заказ принят! Спасибо за покупку.');
+        };
+  </script>
+</body>
+</html>

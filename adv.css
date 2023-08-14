@@ -1,0 +1,198 @@
+/* Для мобильных устройств */
+@media screen and (max-width: 767px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container .box_info {
+        height: 41px;
+        top: 10%;
+        font-weight: 700;
+        font-size: 4vw;
+        line-height: 1.28;
+        color: #011F3A;
+      }
+    
+    .rect1, .rect2, .rect3 {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .r1, .r2, .r3 {
+      height: 250px;
+    }
+
+    .r1{
+        background-image: url(Rectangle-16.png);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position-y: -30px;
+        background-position-x: 80px;
+    }
+
+    .r2{
+        background-image: url(Rectangle-17.png);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position-y: -30px;
+        background-position-x: 80px;
+    }
+    .r3{
+        background-image: url(Rectangle-18.png);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position-y: -30px;
+        background-position-x: 80px;
+    }
+
+    .rect1_1, .rect2_1, .rect3_1 {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-family: 'Roboto';
+      font-style: normal;
+    }
+    
+    .rect1_2, .rect2_2, .rect3_2 {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-family: 'Roboto';
+      font-style: normal;
+    }
+}
+
+@media screen and (width: 280px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container .box_info {
+        height: 41px;
+        top: 10%;
+        font-weight: 700;
+        font-size: 4vw;
+        line-height: 1.28;
+        color: #011F3A;
+      }
+    
+    .rect1, .rect2, .rect3 {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .r1, .r2, .r3 {
+      height: 250px;
+    }
+
+    .r1{
+        background-image: url(Rectangle-16.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 0px;
+        background-position-x: 10px;
+    }
+
+    .r2{
+        background-image: url(Rectangle-17.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 0px;
+        background-position-x: 10px;
+    }
+    .r3{
+        background-image: url(Rectangle-18.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 0px;
+        background-position-x: 10px;
+    }
+
+    .rect1_1, .rect2_1, .rect3_1 {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-family: 'Roboto';
+      font-style: normal;
+    }
+    
+    .rect1_2, .rect2_2, .rect3_2 {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-family: 'Roboto';
+      font-style: normal;
+    }
+  }
+  
+  /* Для устройств с шириной экрана от 768px и больше */
+  @media screen and (min-width: 768px) {
+    .container {
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        }
+    .container .box_info {
+        text-align: center;
+        margin-left: 35%;
+        height: 41px;
+        top: 10%;
+        font-weight: 700;
+        font-size: 2vw;
+        line-height: 1.28;
+        color: #011F3A;
+        background-color: #ffff;
+        width: 30.3%;
+    }
+    
+    .rect1, .rect2, .rect3 {
+        margin-bottom: 0%;
+        margin-left: 35%;
+        width: 30%;
+        background-color:  #ffff;
+    }
+    
+    .r1, .r2, .r3 {
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        margin-top: 20px;
+    }
+    
+    .r1 {
+        background-image: url(Rectangle-16.png);
+    }
+    
+    .r2 {
+        background-image: url(Rectangle-17.png);
+    }
+    
+    .r3 {
+        background-image: url(Rectangle-18.png);
+    }
+    
+    .rect1_1, .rect2_1, .rect3_1 {
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-family: 'Roboto';
+        font-style: normal;
+    }
+    
+    .rect1_2, .rect2_2, .rect3_2 {
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        line-height: 1.4;
+        color: #011F3A;
+        font-family: 'Roboto';
+        font-style: normal;
+    }    
+  }
+  

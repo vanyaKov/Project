@@ -1,0 +1,127 @@
+/* Default styles for all devices */
+html{
+    margin: 0%;
+    background-color: #72BDA3;
+}
+div{
+    font-family: 'Roboto';
+    background-repeat: no-repeat;
+    font-style: normal;
+    font-weight: 400;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+
+
+}
+.box_info {
+    font-size: 1.5rem;
+    line-height: 41px;
+}
+.rect {
+    width: 100%;
+    padding: 2rem;
+}
+.rect .r1, .rect.r2, .rect.r3 {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 1rem;
+}
+
+.rect .r1{
+    background-image: url(Rectangle-13.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position-x: -40px;
+}
+
+.rect .r2{
+    height: 350px;
+    background-image: url(Rectangle-14.png);
+    background-repeat: no-repeat;
+    background-position-x: -40px;
+    background-size: 400px;
+}
+
+.rect .r3{
+    height: 350px;
+    background-image: url(Rectangle-15.png);
+    background-repeat: no-repeat;
+    background-position-x: -70px;
+    background-size: 400px;
+}
+
+.rect .rect_1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.rect .rect_2 {
+    font-size: 1rem;
+}
+
+/* Media queries for different screen sizes */
+@media screen and (min-width: 768px) {
+    /* Styles for tablets and larger screens */
+    .box_info {
+        font-size: 2rem;
+    }
+    .rect {
+        width: 30%;
+        margin: 1rem;
+        text-align: left;
+    }
+    .rect .rect_1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .rect .rect_2 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    /* Styles for desktop screens */
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .r1{
+        background-image: none;
+    }
+    .box_info {
+        font-size: 3rem;
+        padding-top: 4rem;
+    }
+    .rect {
+        padding: 0%;
+        width: 30%;
+        margin-left: 2%;
+        text-align: left;
+    }
+
+    .rect .r1{
+        background-position-x: 0px;
+    }
+    
+    .rect .r2{
+        background-position-x: 0px;
+    }
+    
+    .rect .r3{
+        background-position-x: 0px;
+    }
+    
+
+    .rect .rect_1 {
+        font-size: 2rem;
+    }
+    .rect .rect_2 {
+        font-size: 1.5rem;
+    }
+}
